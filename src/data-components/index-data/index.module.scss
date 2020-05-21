@@ -1,0 +1,82 @@
+.heroOneContainer {
+  padding: var(--site-pdLarge);
+  text-align: center;
+}
+
+.heroTwoContainer,
+.heroFourContainer {
+  text-align: left;
+}
+
+.heroThreeContainer {
+  p {
+    max-width: 85%;
+    margin: auto;
+  }
+  a {
+    margin: 20px auto;
+  }
+}
+
+.heroFourContainer {
+  display: block;
+  background-color: var(--white);
+  color: var(--blue-darkest);
+
+  p {
+    font-weight: 400 !important;
+  }
+}
+
+.heroH2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heroDescription {
+  font-weight: 300;
+  line-height: 1.5;
+
+  &Medium {
+    composes: heroDescription;
+  }
+}
+
+.heroLink {
+  display: block;
+  font-size: 0.9em;
+  text-decoration: none;
+  background-color: var(--blue-lightest);
+  color: var(--blue-darkest);
+  border-bottom: 2px solid var(--blue-normal);
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 3px;
+
+  &Alt {
+    composes: heroLink;
+    background-color: var(--blue-darkest);
+    color: var(--blue-lightest);
+  }
+}
+
+.heroTruckImage {
+  width: auto;
+  height: 100px;
+  float: right;
+  transform: rotateY(180deg);
+}
+
+// ######################### Desktop styles #############################
+@media (min-width: 768px) {
+  .heroContainer {
+    background-color: var(--blue-darkest);
+  }
+
+  .heroOneContainer {
+    max-width: 70%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

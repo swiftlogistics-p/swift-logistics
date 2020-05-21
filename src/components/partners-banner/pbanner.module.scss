@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.logo {
+  width: 12vw;
+  height: auto;
+  margin: 0 10px;
+}
+
+.p {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+// ######################### Desktop styles #############################
+@media (min-width: 768px) {
+  .logo {
+    width: 60px;
+  }
+}

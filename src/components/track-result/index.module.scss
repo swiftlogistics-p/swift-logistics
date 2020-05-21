@@ -1,0 +1,27 @@
+.mapContainer {
+  background-color: var(--blue-lightest);
+  width: 100%;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 55vh;
+}
+
+// ######################### Desktop styles #############################
+@media (min-width: 768px) {
+  .mapContainer {
+    height: 80vh;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: var(--site-pd) var(--site-pdLarge);
+    max-width: 90vw;
+    margin: auto;
+  }
+}

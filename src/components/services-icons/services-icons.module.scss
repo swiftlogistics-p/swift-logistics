@@ -1,0 +1,60 @@
+.container {
+  padding: var(--site-pd);
+  min-height: 120px;
+  background-color: var(--blue-lightest);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.serviceIcon {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 20vw;
+  min-height: 10vh;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--blue-darkest);
+  color: var(--blue-lightest);
+  fill: var(--blue-lightest);
+  cursor: pointer;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.serviceLabel {
+  font-size: 0.7em;
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+
+// ######################### Desktop styles #############################
+@media (min-width: 768px) {
+  .container {
+    background-color: var(--blue-lightest);
+  }
+
+  .content {
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+
+  .serviceIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .serviceLabel {
+    font-size: 0.9em;
+  }
+}

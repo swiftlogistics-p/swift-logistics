@@ -1,0 +1,54 @@
+.container {
+  background-color: var(--blue-darkest);
+  color: var(--blue-lightest);
+  text-align: center;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: calc(var(--site-pd) / 2);
+}
+
+.link {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: var(--blue-lightest);
+  text-decoration: none;
+  margin-bottom: calc(var(--site-pd) / 2);
+}
+
+.copyright {
+  background-color: #031935;
+  opacity: 0.7;
+  font-size: 0.8em;
+  margin: 0;
+  padding: calc(var(--site-pd) / 2);
+}
+
+// ######################### Desktop styles #############################
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--site-pd);
+  }
+
+  .linksContainer {
+    justify-content: space-between;
+  }
+
+  .link {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: var(--blue-lightest);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .copyright {
+    background-color: transparent;
+  }
+}

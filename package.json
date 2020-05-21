@@ -1,0 +1,53 @@
+{
+  "name": "swift-logistics",
+  "version": "1.0.0",
+  "description": "Shipping & logistics",
+  "scripts": {
+    "start": "gatsby develop",
+    "dev": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swiftlogistics-p/swift-logistics.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/swiftlogistics-p/swift-logistics/issues"
+  },
+  "homepage": "https://github.com/swiftlogistics-p/swift-logistics#readme",
+  "dependencies": {
+    "gatsby": "^2.20.25",
+    "gatsby-source-contentful": "^2.3.2",
+    "google-map-react": "^1.1.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-slideshow-image": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^5.0.15",
+    "dotenv": "^8.2.0",
+    "gatsby-background-image": "^1.1.1",
+    "gatsby-image": "^2.3.4",
+    "gatsby-plugin-offline": "^3.1.4",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-plugin-typescript": "^2.3.3",
+    "gatsby-remark-images": "^3.2.4",
+    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-transformer-remark": "^2.7.3",
+    "gatsby-transformer-sharp": "^2.4.6",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "svg-loaders-react": "^2.2.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
