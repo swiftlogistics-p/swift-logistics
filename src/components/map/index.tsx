@@ -9,8 +9,6 @@ const defaultProps = {
   zoom: 11,
 }
 
-const AnyReactComponent: React.FC<any> = ({ text }) => <div>{text}</div>
-
 interface MapProps {
   location: {
     lat: number

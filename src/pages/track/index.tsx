@@ -11,15 +11,13 @@ import { Result } from '../../components/track-result/interfaces'
 
 const { useState } = React
 
-const results = { 'LLS-1109-NY': parcel }
+const results = { 'MQS-72-KYV': parcel }
 
 const TrackPage = ({ location }) => {
   const [item, setItem] = useState<Result | null | 'not found'>(null)
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = (code: string) => {
-    event.preventDefault()
-
     setIsLoading(true)
 
     setTimeout(() => {

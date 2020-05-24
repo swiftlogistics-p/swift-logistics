@@ -12,7 +12,7 @@ const Timeline: React.FC<TimelineProps> = ({ index, length, isDelayed }) => {
   const timelineClassname =
     index === 0
       ? styles.timelineFirst
-      : index === length
+      : index === length - 1
       ? styles.timelineLast
       : styles.timeline
 

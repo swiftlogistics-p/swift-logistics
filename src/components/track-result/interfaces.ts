@@ -7,15 +7,21 @@ export interface Result {
     currentLocation: {
       lat: number
       lng: number
-      text: string
       status: 'in-transit' | 'delayed'
     }
   }
+  content: ResultContent[]
   history: {
+    idx: number
     location: string
     code: string
     date: Date
     comment: string
   }[]
   senderName: string
+}
+
+interface ResultContent {
+  name: string
+  cost: number
 }
