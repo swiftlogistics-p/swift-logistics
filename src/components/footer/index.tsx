@@ -24,8 +24,7 @@ const Footer = () => {
       <div className={styles.linksContainer}>{renderLinks()}</div>
 
       <p className={styles.copyright}>
-        {currentYear} &copy; Swift Security &amp; Logistics. All rights
-        reserved.
+        {currentYear} &copy; Swift Logistics. All rights reserved.
       </p>
     </footer>
   )

@@ -2,12 +2,11 @@ import * as React from 'react'
 
 // components
 import Layout from '../../layout'
-import ServicesIcon from '../../components/services-icons'
 import PartnersBanner from '../../components/partners-banner'
 import Linebreak from '../../components/linebreak'
 
 // images
-import manVaultImg from '../../assets/images/man-vault.jpg'
+// import manVaultImg from '../../assets/images/man-vault.jpg'
 
 // styles
 import styles from './index.module.scss'
@@ -15,23 +14,23 @@ import styles from './index.module.scss'
 const AboutPage = () => {
   return (
     <Layout title="About us">
-      <h2 className={styles.title}>About Swift Security &amp; Logistics</h2>
+      <h2 className={styles.title}>About Swift Logistics</h2>
 
       <div className={styles.container}>
-        <img
+        {/* <img
           className={styles.introImg}
           src={manVaultImg}
           alt="A man standing in front of a vault"
-        />
+        /> */}
 
         <p className={styles.description}>
-          Swift Security &amp; Logistics is part of a larger group of safe
-          deposit box facilities with vaults in the US, Scotland, England as
-          well as here in Ireland. We were the first independently owned safe
-          deposit box centre in Ireland and we are 100% Irish owned and
-          operated. We provide custodial services to private individuals and
-          businesses, allowing them to safeguard their most valued possessions
-          in a secure state-of-the-art purpose-built vault.
+          Swift Logistics is part of a larger group of safe deposit box
+          facilities with vaults in the US, Scotland, England as well as here in
+          Ireland. We were the first independently owned safe deposit box centre
+          in Ireland and we are 100% Irish owned and operated. We provide
+          custodial services to private individuals and businesses, allowing
+          them to safeguard their most valued possessions in a secure
+          state-of-the-art purpose-built vault.
           <Linebreak />
           As a member of the Safe Deposit Federation (SDF), Swift Security &amp;
           Logistics meet the highest standards in both security and privacy. We
@@ -55,7 +54,6 @@ const AboutPage = () => {
         </p>
       </div>
 
-      <ServicesIcon />
       <PartnersBanner />
     </Layout>
   )

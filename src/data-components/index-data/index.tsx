@@ -19,19 +19,19 @@ import styles from './index.module.scss'
 
 export const heroOneContent = (
   <div className={styles.heroOneContainer}>
-    <h2 className={styles.heroH2}>Secure Vault Deposit &amp; Logistics</h2>
+    <h2 className={styles.heroH2}>Welcome to Swift Logistics</h2>
 
     <p className={styles.heroDescription}>
-      Experience complete peace of mind and confidentiality with unparalleled
-      state of the art security.
+      We&apos;re the leaders in bespoke and general shipping and logistics
+      services
     </p>
 
     <Link
       className={styles.heroLink}
-      to="/secure-vault"
+      to="/track"
       style={{ margin: '20px auto' }}
     >
-      Access your secure vault
+      Track a package
     </Link>
   </div>
 )
@@ -91,10 +91,10 @@ export const heroFourContent = (
 export const heroFiveContent = (
   <div className={styles.heroFiveContainer}>
     <p className={styles.heroDescriptionMedium}>
-      Swift Security &amp; Logistics coordinates people in over 17 countries and
-      territories worldwide.
+      Swift Logistics coordinates people in over 87 countries and territories
+      worldwide.
       <Linebreak />
-      Driven by the power of more than 7,000 employees, we deliver integrated
+      Driven by the power of more than 11,000 employees, we deliver integrated
       services and tailored solutions for managing and transporting goods and
       information.
     </p>

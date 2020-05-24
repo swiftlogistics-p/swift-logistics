@@ -6,16 +6,16 @@ const ServiceCTA = () => {
   return (
     <section className={styles.container}>
       <div className={styles.box}>
-        <h2 className={styles.h2}>Security &amp; Solutions Expertise</h2>
+        <h2 className={styles.h2}>Bespoke Logistics Solutions</h2>
 
         <p className={styles.p}>
           A comprehensive suite of services drawing on our global scale and
-          expertise to deliver security solutions across your entire supply
+          expertise to satisfy custom logistics need across your entire supply
           chain.
         </p>
 
-        <Link className={styles.link} to="/secure-vault">
-          Access your vault
+        <Link className={styles.link} to="/contact-us">
+          Contact us
         </Link>
       </div>
 

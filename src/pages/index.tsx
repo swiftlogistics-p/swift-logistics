@@ -3,9 +3,7 @@ import * as React from 'react'
 // components
 import Layout from '../layout'
 import Hero from '../components/hero'
-import ServicesIcons from '../components/services-icons'
 import ServicesCTA from '../components/services-cta'
-import VaultInfo from '../components/vault-info'
 import PartnersBanner from '../components/partners-banner'
 
 // data components
@@ -29,9 +27,7 @@ const IndexPage = () => {
     <Layout title="Home">
       <Slideshow content={heroOneContent} contentLg={heroOneDesktopContent} />
 
-      <ServicesIcons />
-
-      <VaultInfo />
+      {/* <ServicesIcons /> */}
 
       <Hero
         id="home-ship-one"

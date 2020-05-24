@@ -64,8 +64,8 @@ const PrivacyPolicyPage = () => {
           </li>
           <li>
             <p className={styles.p}>
-              <strong>Website</strong> refers to Swift Security &amp; Logistics,
-              accessible from{' '}
+              <strong>Website</strong> refers to Swift Logistics, accessible
+              from{' '}
               <a
                 href="https://swiftsecuritylogistics.com"
                 rel="external nofollow noopener"

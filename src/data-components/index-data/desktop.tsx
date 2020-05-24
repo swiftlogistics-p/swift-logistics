@@ -12,25 +12,19 @@ import styles from './desktop.module.scss'
 
 export const heroOneDesktopContent = (
   <div className={`${styles.heroContainer} ${styles.heroOneContainer}`}>
-    <h2 className={styles.heroH2}>Secure Vault Services</h2>
+    <h2 className={styles.heroH2}>Welcome to Swift Logistics</h2>
 
-    <ul className={styles.ul}>
-      <li className={styles.li}>Free unlimited client access 7 days a week</li>
-      <li className={styles.li}>
-        Unparalleled State of the Art security with 24 hour monitoring
-      </li>
-      <li className={styles.li}>Secure and private gated client car parking</li>
-      <li className={styles.li}>Discreet City Centre location</li>
-      <li className={styles.li}>100% Swiss owned and operated</li>
-      <li className={styles.li}>Complete peace of mind and confidentiality</li>
-    </ul>
+    <p className={styles.p}>
+      We&apos;re the leaders in bespoke and general shipping and logistics
+      services
+    </p>
 
     <Link
       className={styles.heroLink}
-      to="/secure-vault"
+      to="/track"
       style={{ margin: '30px auto 0 auto' }}
     >
-      Access your secure vault
+      Track a package
     </Link>
   </div>
 )
@@ -40,9 +34,9 @@ export const heroTwoDesktopContent = (
     <h2 className={styles.heroH2}>Freight &amp; Logistics Services</h2>
 
     <p className={styles.heroP}>
-      Ocean Freight Services / Sea Freight Services offered by Swift Security
-      &amp; Logistics has demonstrated incomparable excellence to companies and
-      individuals with special requirements.
+      Ocean Freight Services / Sea Freight Services offered by Swift Logistics
+      has demonstrated incomparable excellence to companies and individuals with
+      special requirements.
       <Linebreak />
       We are committed to providing efficient freight and handling, ordering,
       pickup and on-time delivery; all together with constant support for our
@@ -107,9 +101,10 @@ export const heroFourDesktopContent = (
 export const heroFiveDesktopContent = (
   <div className={styles.heroFiveContainer}>
     <p className={styles.p}>
-      Avant coordinates people in over 133 countries and territories worldwide.
+      Swift Logistics coordinates people in over 87 countries and territories
+      worldwide.
       <Linebreak />
-      Driven by the power of more than 67,000 employees, we deliver integrated
+      Driven by the power of more than 11,000 employees, we deliver integrated
       services and tailored solutions for managing and transporting letters,
       goods and information.
     </p>

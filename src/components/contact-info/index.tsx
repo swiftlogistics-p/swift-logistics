@@ -16,10 +16,9 @@ const ContactInfo = () => {
       <h2 className={styles.h2}>Contact Us</h2>
 
       <p className={styles.p}>
-        Swift Security &amp; Logistics' customer support is here for you at any
-        point. Do you have any inquiries about our services or do you have a
-        complaint? Do you want to ship a secure vault or hire our security
-        services?
+        Swift Logistics customer support is here for you at any point. Do you
+        have any inquiries about our services or do you have a complaint? Do you
+        want to ship a secure vault or hire our security services?
         <Linebreak />
         You can reach us by filling the form below. If it's a high-priority
         request you can reach us via the methods below:

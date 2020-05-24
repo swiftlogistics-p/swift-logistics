@@ -5,6 +5,9 @@ import { Link, navigate } from 'gatsby'
 import Hamburger from '../hamburger'
 import SecondaryMenu from './SecondaryMenu'
 
+// images
+import logoImg from '../../assets/images/logo.png'
+
 // icons
 import LogoIcon from '../../assets/icons/LogoIcon'
 import ArrowDown from '../../assets/icons/ArrowDownIcon'
@@ -15,7 +18,6 @@ import styles from './navbar.module.scss'
 import useNoScroll from './useNoScroll'
 
 const services = [
-  { name: 'Secure Vault', url: '/services/secure-vault' },
   { name: 'Air Freight', url: '/services/air-freight' },
   { name: 'Ocean Freight', url: '/services/ocean-freight' },
   { name: 'Road Freight', url: '/services/road-freight' },
@@ -42,7 +44,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <Link aria-label="Go home" to="/" className={styles.logo}>
-        <LogoIcon />
+        <img alt="Home button" src={logoImg} style={{ height: 30 }} />
       </Link>
 
       <Hamburger isPressed={isMenuOpen} onClick={handleMenuToggle} />
@@ -69,12 +71,6 @@ const Navbar = () => {
         <li className={styles.navMenuItem}>
           <Link className={styles.navMenuLink} to="/contact-us">
             Contact us
-          </Link>
-        </li>
-
-        <li className={styles.navMenuItem}>
-          <Link className={styles.navMenuLink} to="/secure-vault">
-            Access your vault
           </Link>
         </li>
 

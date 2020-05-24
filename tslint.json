@@ -5,7 +5,7 @@
   "rules": {
     "interface-name": ["never-prefix"],
     "member-access": [false],
-    "ordered-imports": [false],
+    "ordered-imports": [true],
     "no-console": [false],
     "no-var-requires": false
   },
