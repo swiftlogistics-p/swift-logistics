@@ -17,7 +17,11 @@ const Timeline: React.FC<TimelineProps> = ({ index, length, isDelayed }) => {
       : styles.timeline
 
   return (
-    <span className={`${timelineClassname} ${isDelayed && styles.delayed}`} />
+    <span
+      className={`${timelineClassname} ${isDelayed && styles.delayed} ${
+        length === 1 && styles.timelineSingle
+      }`}
+    />
   )
 }
 

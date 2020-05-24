@@ -13,8 +13,8 @@ import { Result } from './interfaces'
 
 // styles
 import styles from './index.module.scss'
-import PackageHistory from '../package-history'
-import PackageContent from '../package-content'
+import ParcelHistory from '../parcel-history'
+import ParcelContent from '../parcel-content'
 
 export interface TrackResultProps {
   result: Result | null | 'not found'
@@ -34,9 +34,9 @@ const TrackResult: React.FC<TrackResultProps> = ({ result, isLoading }) => {
       </div>
 
       <section className={styles.container}>
-        <PackageHistory item={result} />
+        <ParcelHistory parcel={result} />
 
-        <PackageContent item={{ ...result.item, name: result.sender.name }} />
+        <ParcelContent parcel={result} />
       </section>
     </>
   )

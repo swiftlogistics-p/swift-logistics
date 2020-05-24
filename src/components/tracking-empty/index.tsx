@@ -16,7 +16,7 @@ const TrackingEmpty: React.FC<TrackingEmptyProps> = ({ type }) => (
         <SearchErrorIcon className={styles.containerIcon} />
 
         <h3 className={styles.containerInfo}>
-          No package found with that tracking code. Please try again.
+          No parcel found with that tracking code. Please try again.
         </h3>
       </>
     ) : (
@@ -24,7 +24,7 @@ const TrackingEmpty: React.FC<TrackingEmptyProps> = ({ type }) => (
         <MapIcon className={styles.containerIcon} />
 
         <h3 className={styles.containerInfo}>
-          Input a tracking code to see the current location of your package.
+          Input a tracking code to see the current location of your parcel.
         </h3>
       </>
     )}

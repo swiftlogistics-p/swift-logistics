@@ -8,6 +8,10 @@
   top: 0;
   bottom: 0;
 
+  &Single {
+    background-color: transparent;
+  }
+
   &:before {
     content: '';
     display: block;

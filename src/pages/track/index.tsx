@@ -1,20 +1,21 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
 
 import Layout from '../../layout'
 import TrackForm from '../../components/track-form'
 import TrackResult from '../../components/track-result'
 import PartnersBanner from '../../components/partners-banner'
 
+import { parcel } from './parcel'
+
 import { Result } from '../../components/track-result/interfaces'
 
 const { useState } = React
 
-const TrackPage = ({ data: { allContentfulPackage }, location }) => {
+const results = { 'LLS-1109-NY': parcel }
+
+const TrackPage = ({ location }) => {
   const [item, setItem] = useState<Result | null | 'not found'>(null)
   const [isLoading, setIsLoading] = useState(false)
-
-  const packages = allContentfulPackage.nodes
 
   const handleSubmit = (code: string) => {
     event.preventDefault()
@@ -22,7 +23,7 @@ const TrackPage = ({ data: { allContentfulPackage }, location }) => {
     setIsLoading(true)
 
     setTimeout(() => {
-      const result = packages.filter(p => p.package.item.code === code)[0]
+      const result = results[code.toUpperCase()]
 
       if (!result) {
         setItem('not found')
@@ -30,7 +31,7 @@ const TrackPage = ({ data: { allContentfulPackage }, location }) => {
         return
       }
 
-      setItem(result.package)
+      setItem(result)
       setIsLoading(false)
     }, 900)
   }
@@ -39,7 +40,7 @@ const TrackPage = ({ data: { allContentfulPackage }, location }) => {
     location && location.state ? location.state.trackingCode : ''
 
   return (
-    <Layout title="Track your package">
+    <Layout title="Track your parcel">
       <TrackForm
         defaultCode={defaultTrackingCode}
         handleSubmit={handleSubmit}
@@ -51,38 +52,5 @@ const TrackPage = ({ data: { allContentfulPackage }, location }) => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    allContentfulPackage {
-      nodes {
-        package {
-          item {
-            code
-            price
-            sendDate
-            eta
-            currentLocation {
-              lat
-              lng
-              text
-            }
-          }
-          sender {
-            name
-          }
-          history {
-            code
-            comment
-            date
-            leg
-            location
-            status
-          }
-        }
-      }
-    }
-  }
-`
 
 export default TrackPage

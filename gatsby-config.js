@@ -6,7 +6,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `Swift Logistics`,
-    description: `Expedited freight services`,
+    description: `Bespoke & General Freight Services`,
   },
   plugins: [
     // Enable SASS support
@@ -27,14 +27,6 @@ module.exports = {
     // resistant to bad networks. Works with almost any
     // site!
     `gatsby-plugin-offline`,
-
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.GATBSY_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
     {
       resolve: `gatsby-plugin-tawk`,
       options: {

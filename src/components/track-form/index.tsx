@@ -34,7 +34,7 @@ const VaultForm: React.FC<VaultFormProps> = ({
     <section className={styles.container}>
       <div className={styles.info}>
         <p className={styles.introText}>
-          Know where your package is at all times in the delivery lifetime.
+          Know where your parcel is at all times in the delivery lifetime.
           Simply fill in the 8 digit tracking code and track your item.
         </p>
 
@@ -52,7 +52,7 @@ const VaultForm: React.FC<VaultFormProps> = ({
           />
 
           <button className={styles.submit} type="submit">
-            Track Package
+            Track Parcel
           </button>
         </form>
       </div>

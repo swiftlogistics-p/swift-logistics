@@ -24,7 +24,7 @@ export const heroOneDesktopContent = (
       to="/track"
       style={{ margin: '30px auto 0 auto' }}
     >
-      Track a package
+      Track a parcel
     </Link>
   </div>
 )

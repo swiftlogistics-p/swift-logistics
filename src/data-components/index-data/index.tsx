@@ -31,7 +31,7 @@ export const heroOneContent = (
       to="/track"
       style={{ margin: '20px auto' }}
     >
-      Track a package
+      Track a parcel
     </Link>
   </div>
 )
@@ -54,7 +54,7 @@ export const heroThreeContent = (
   <div className={styles.heroThreeContainer}>
     <p className={styles.heroDescription}>
       Your one-stop solution for your international air freight and freight
-      needs to ship and track packages by air to anywhere across the globe.
+      needs to ship and track parcels by air to anywhere across the globe.
     </p>
 
     <Link className={styles.heroLink} to="/contact-us">
