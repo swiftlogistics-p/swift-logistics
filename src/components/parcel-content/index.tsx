@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import styles from './index.module.scss'
 import { Result } from '../track-result/interfaces'
+import Spacer from '../spacer'
 
 interface IParcelContent {
   parcel: Result
@@ -22,7 +23,7 @@ const ParcelContent: React.FC<IParcelContent> = ({ parcel }) => {
 
   const renderContent = () =>
     parcel.content.map(parcelItem => (
-      <p key={parcelItem.name} className={styles.content}>
+      <p key={parcelItem.name} className={styles.p}>
         <span>{parcelItem.name}</span>
         <span>{formatPrice(parcelItem.cost)}</span>
       </p>
@@ -32,7 +33,9 @@ const ParcelContent: React.FC<IParcelContent> = ({ parcel }) => {
     <div className={styles.container}>
       <h2 className={styles.h2}>Parcel details</h2>
 
-      <div>{renderContent()}</div>
+      {renderContent()}
+
+      <Spacer height={30} />
 
       <p className={styles.p}>
         <span>Sent by</span> {parcel.senderName}
@@ -42,6 +45,15 @@ const ParcelContent: React.FC<IParcelContent> = ({ parcel }) => {
       </p>
       <p className={styles.p}>
         <span>Estimated arrival date:</span> {parcel.item.eta}
+      </p>
+
+      <Spacer height={30} />
+
+      <p className={styles.p}>
+        <span>Receiver:</span> {parcel.receiver.name}
+      </p>
+      <p className={styles.p}>
+        <span>Destination:</span> {parcel.receiver.address}
       </p>
 
       <p className={styles.price}>Worth of item: {totalPrice}</p>

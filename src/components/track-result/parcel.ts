@@ -16,6 +16,10 @@ export const parcel = {
     { name: 'Cash (USD)', cost: 56000 },
   ],
   senderName: 'Mark Schaefer',
+  receiver: {
+    name: 'Nancy Ashley',
+    address: 'Abbeville, South Carolina, US',
+  },
   history: [
     {
       idx: 2,

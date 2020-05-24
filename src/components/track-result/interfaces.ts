@@ -11,6 +11,10 @@ export interface Result {
     }
   }
   content: ResultContent[]
+  receiver: {
+    name: string
+    address: string
+  }
   history: {
     idx: number
     location: string

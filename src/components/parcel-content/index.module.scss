@@ -15,15 +15,7 @@
   justify-content: space-between;
   color: var(--blue-darkest);
   padding: 0 var(--site-pd);
-}
-
-.content {
-  composes: p;
   font-weight: 500;
-}
-
-.content:last-of-type {
-  margin-bottom: 45px;
 }
 
 .price {
