@@ -37,9 +37,11 @@ const Navbar = () => {
 
   const handleTrackingInputSubmit = e => {
     e.preventDefault()
-
-    navigate('/track', { state: { trackingCode: trackingInput } })
+    submitForm()
   }
+
+  const submitForm = () =>
+    navigate('/track', { state: { trackingCode: trackingInput } })
 
   return (
     <nav className={styles.nav}>
@@ -75,7 +77,10 @@ const Navbar = () => {
         </li>
 
         <li className={styles.navMenuItem}>
-          <SearchIcon className={styles.searchIcon} />
+          <SearchIcon
+            className={styles.searchIcon}
+            onClick={() => submitForm()}
+          />
 
           <form onSubmit={handleTrackingInputSubmit}>
             <input
