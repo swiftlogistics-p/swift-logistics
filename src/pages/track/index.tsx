@@ -5,7 +5,7 @@ import TrackForm from '../../components/track-form'
 import TrackResult from '../../components/track-result'
 import PartnersBanner from '../../components/partners-banner'
 
-import { parcel } from './parcel'
+import { parcel } from '../../components/track-result/parcel'
 
 import { Result } from '../../components/track-result/interfaces'
 
