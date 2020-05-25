@@ -5,9 +5,9 @@ export const parcel = {
     sendDate: '25th May, 2020',
     eta: '29th May, 2020',
     currentLocation: {
-      lat: 55.7558,
-      lng: 37.6173,
-      status: 'in-transit',
+      lat: 53.5396,
+      lng: 8.5809,
+      status: 'delayed',
     },
   },
   content: [
@@ -21,6 +21,13 @@ export const parcel = {
     address: 'Abbeville, South Carolina, US',
   },
   history: [
+    {
+      idx: 3,
+      code: 'BRE',
+      comment: 'Package delayed at warehouse',
+      date: '25th May, 2020',
+      location: 'Bremen, Germany',
+    },
     {
       idx: 2,
       code: 'MOS',

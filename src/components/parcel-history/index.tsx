@@ -12,32 +12,30 @@ interface ParcelHistoryProps {
 }
 
 const ParcelHistory: React.FC<ParcelHistoryProps> = ({ parcel }) => {
+  const parcelStatus = parcel.item.currentLocation.status
+
   const renderParcelHistory = () =>
     parcel.history
       .sort((a, b) => (a.idx > b.idx ? -1 : a.idx < b.idx ? 1 : 0))
       .map((historyItem, i) => {
-        const parcelStatus = parcel.item.currentLocation.status
+        const isDelayed = parcelStatus === 'delayed' && i === 0
 
         return (
           <div
-            className={
-              parcelStatus === 'in-transit'
-                ? styles.history
-                : styles.historyDelayed
-            }
+            className={isDelayed ? styles.historyDelayed : styles.history}
             key={historyItem.code}
           >
             <Timeline
               index={i}
               length={parcel.history.length}
-              isDelayed={parcelStatus === 'delayed'}
+              isDelayed={isDelayed}
             />
 
             <p className={styles.historyComment}>{historyItem.comment}</p>
             <p className={styles.historyLocation}>{historyItem.location}</p>
             <p className={styles.historyDate}>{historyItem.date}</p>
 
-            {parcelStatus === 'delayed' && (
+            {isDelayed && (
               <small className={styles.delayedText}>
                 Please <Link to="/contact-us">contact us</Link> for more info
               </small>
