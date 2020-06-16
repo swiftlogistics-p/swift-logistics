@@ -5,13 +5,16 @@ import TrackForm from '../../components/track-form'
 import TrackResult from '../../components/track-result'
 import PartnersBanner from '../../components/partners-banner'
 
-import { parcel } from '../../components/track-result/parcel'
+import { parcel, iphone } from '../../components/track-result/parcel'
 
 import { Result } from '../../components/track-result/interfaces'
 
 const { useState } = React
 
-const results = { 'MQS-72-KYV': parcel }
+const results = {
+  'MQS-72-KYV': parcel,
+  'YTD-77-PLL': iphone,
+}
 
 const TrackPage = ({ location }) => {
   const [item, setItem] = useState<Result | null | 'not found'>(null)
