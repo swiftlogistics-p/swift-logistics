@@ -52,8 +52,8 @@ export const iphone = {
     sendDate: '10th June, 2020',
     eta: '29th June, 2020',
     currentLocation: {
-      lat: 74.1724,
-      lng: 40.7357,
+      lat: 40.7357,
+      lng: 74.1724,
       status: 'in transit',
     },
   },
