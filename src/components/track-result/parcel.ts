@@ -49,27 +49,27 @@ export const iphone = {
   item: {
     code: 'YTD-77-PLL',
     price: 972.25,
-    sendDate: '11th June, 2020',
+    sendDate: '10th June, 2020',
     eta: '29th June, 2020',
     currentLocation: {
       lat: 74.1724,
       lng: 40.7357,
-      status: 'delayed',
+      status: 'in transit',
     },
   },
   content: [
     { name: 'iPhone XS Max', cost: 972.25 },
   ],
-  senderName: 'Apple inc.',
+  senderName: 'Amazon inc.',
   receiver: {
     name: 'Leo Otega',
-    address: 'Port of Tincan - LOS',
+    address: 'Benin city, Nigeria',
   },
   history: [
     {
       idx: 2,
       code: 'NEW',
-      comment: 'Package delayed at sorting hub',
+      comment: 'Package delivered to sorting hub',
       date: '15th June, 2020',
       location: 'Newark, United States',
     },
@@ -77,7 +77,7 @@ export const iphone = {
       idx: 1,
       code: 'NYU',
       comment: 'Picked up for delivery',
-      date: '11th June, 2020',
+      date: '10th June, 2020',
       location: 'New York, United States',
     },
   ],
